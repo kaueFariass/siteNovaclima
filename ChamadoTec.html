@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Clima</title>
+    <link href="imagens/logo.png" rel="icon">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="navbar">
+                    <a href="index.html"><img src="imagens/logo.png" class="logo" /></a>
+                    <ul class="navbar-itens">
+                        <li><a href="#section-home">Home</a></li>
+                        <li><a href="#section-servicos">Historico de chamados</a></li>
+                        <li><a href="#section-quem_somos">Financeiro</a></li>
+                        <li><a href="#section-contatos">Contatos</a></li>
+                        <li><a href="ChamadoTec.html" class="default-btn">Abra um chamado</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div>
+        <form name="cadastro" method="post" action="orcamentook.html">
+        
+
+        <label for="txtNome">Seu nome</label>
+
+        <br>
+
+        <input type="text" name="txtNome" id="txtNome" placeholder="  Digite Nome" title="Digite o Nome" minlength="3" value="" required>
+
+        <br><br>
+
+        <label for="txtEmail">Seu e-mail</label>
+
+        <br>
+
+        <input type="email" name="txtEmail" id="txtEmail" placeholder="  Digite seu email" title="Digite seu email" value="" required>
+
+        <br><br>
+
+        <label for="txtTel">Telefone</label>
+
+        <br>
+
+        <input type="tel" name="txtTel" id="txtTel" placeholder="  Digite seu numero" title="Digite seu numero" minlength="11" value="" required>
+
+        <br><br>
+
+        <label for="assunto">Tipo de serviço:</label>
+
+        <br>
+
+        <select id="assunto">
+
+        <option value="help">Selecione</option>
+
+        <option value="help">Instalação</option>
+
+        <option value="duvi">Manutenção</option>
+
+        <option value="sec">PMOC</option>
+
+        </select>
+
+        <br><br><br>
+
+        <label for="assunto">você é pessoa fisica ou juridica ?</label>
+
+        <br>
+
+        <select id="assunto">
+
+            <option value="help">Selecione</option>
+
+            <option value="help">Pessoa Fisica</option>
+    
+            <option value="duvi">Pessoa Juridica</option>
+    
+            </select>
+    
+            <br><br><br>
+
+        <label id="txtMensagem">Mensagem</label>
+        
+        <br>
+        
+        <textarea id="txtMensagem" rows="5" placeholder="  Nos diga um pouco sobre o serviço solicitado."></textarea>
+
+        <br><br>
+
+        <input type="submit"
+
+        id="btnEnviar"
+        class="btnEnviar"
+
+        value="Enviar Mensagem">
+
+        <br>
+        <br>
+        <br>
+        <p></p>
+        </form>
+        </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-box">
+                <div class="company-footer">
+                    <img src="imagens/logo.png" id="logofooter">
+                    <h2>Nova Clima</h2>
+                    <p>Excelencia no ramo de manutenção de ar condicionado.</p>
+                </div>
+            </div>
+            <div class="footer-box" id="section-contatos">
+                <h2>Contatos</h2>
+                <br>
+                <br>
+                <br>
+                <ul class="footer-list">
+   
+                    <li>
+                        <a href="https://www.instagram.com/_novaclima/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5511979642721&text=Ol%C3%A1%2C%20poderia%20me%20ajudar%3F" target="_blank">
+                            <i class="fab fa-Whatsapp"></i>
+                            <span>Whatsapp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fab fa-telefone"></i>
+                            <span>Tel: (11) 2093-0769</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="fab fa-Email"></i>
+                            <span>E-mail: contato@novaclima.com.br</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html" target="_blank">
+                            <i class="fab fa-Area"></i>
+                            <span>Area do cliente</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p>Ti Solutions - 2020 ®</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
