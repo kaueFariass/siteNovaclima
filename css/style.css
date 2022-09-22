@@ -53,9 +53,9 @@ section {
 
 .navbar {
     width: 100%;
-    height: 90px;
+    height: 110px;
     background-color: #232a31;
-    padding: 0px 2em;
+    padding: 20px 3em;
     position: fixed;
     box-sizing: border-box;
     box-shadow: 1px 2px 5px #333;
@@ -63,20 +63,22 @@ section {
 }
 
 .logo {
-    height: 90px;
-    padding: 10px;
+    height: 100px;
+    padding:15px;
     background-color: rgb(58, 84, 94);
     border-radius: 80px;
-    animation: .5s;
+    animation: .6s;
+    box-shadow: 1px 2px 5px #333;
 }
 
 .logo:hover {
     height: 93px;
-    padding: 12px;
+    padding: 20px;
     filter: invert(100%);
     animation: .10s;
     background-color: black;
     border-radius: 80px;
+    border-color: #000000;
     animation: .5s;
 }
 
@@ -85,7 +87,7 @@ section {
     position: absolute;
     display: inline-block;
     height: 70px;
-    line-height: 90px;
+    line-height: 75px;
     margin: 0;
     right: 0;
 }
@@ -242,9 +244,10 @@ form input {
     color: aliceblue;
     border-radius: 7px;
     border: none;
-    font-size: 15px;
-    width: 300px;
-    height: 30px;
+    padding: 10px;
+    font-size: 30px;
+    width: 400px;
+    height: 50px;
 }
 
 form input ::placeholder {
@@ -351,9 +354,9 @@ h1 {
 
 footer {
 	background-color: #666 !important;
-	padding: 5em 0!important;
-	padding-bottom: 40px!important;
-	border-top: 5px solid #000000!important;
+	padding: 10px!important;
+	padding-bottom: 5px!important;
+	border-top: 4px solid #000000!important;
 }
 
 footer h2, footer p, footer a, footer span {
@@ -361,7 +364,7 @@ footer h2, footer p, footer a, footer span {
 }
 
 footer h2 {
-	font-weight: 350!important;
+	font-weight: 300!important;
 }
 
 footer a {
@@ -389,7 +392,7 @@ footer .wrapper:after {
 }
 
 .company-footer {
-	width: 80%!important;
+	width: 70%!important;
 }
 
 .company-footer h2 {
@@ -453,3 +456,12 @@ footer .wrapper:after {
     padding-left: 28%;
 }
 
+
+form {
+    text-align: center;
+    
+}
+
+label {
+    font-size: 25px;
+}
