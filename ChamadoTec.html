@@ -1,37 +1,50 @@
 <!doctype html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nova Clima</title>
-    <link href="imagens/logo.png" rel="icon">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/media.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-        </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="imagens/logo.png" rel="icon">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+        <title>nova Clima</title>
+    </head>
+    
+    <body>
         <header>
-            <nav>
-                <div class="navbar">
-                    <a href="index.html"><img src="imagens/logo.png" class="logo" /></a>
-                    <ul class="navbar-itens">
-                        <li><a href="#section-home">Home</a></li>
-                        <li><a href="#section-servicos">Historico de chamados</a></li>
-                        <li><a href="#section-quem_somos">Financeiro</a></li>
-                        <li><a href="#section-contatos">Contatos</a></li>
-                        <li><a href="ChamadoTec.html" class="default-btn">Abra um chamado</a></li>
+            <nav class="nav-bar">
+                <div class="logo">
+                  <a href="index.html"><img src="imagens/logo.png" class="logo" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                      <li class="nav-item"><a href="index.html#section-home" class="nav-link"> Início</a></li>
+                      <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Historico de chamados</a></li>
+                      <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Financeiro</a></li>
+                      <li class="nav-item"><a href="index.html#section-contatos" class="nav-link"> Contatos</a></li>
                     </ul>
                 </div>
+                <div class="login-button">
+                    <button><a href="ChamadoTec.html">Abra um chamado</a></button>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+                </div>
             </nav>
+            <div class="mobile-menu">
+              <ul>
+                <li class="nav-item"><a href="index.html#section-home" class="nav-link"> Início</a></li>
+                <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Historico de chamados</a></li>
+                <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Financeiro</a></li>
+                <li class="nav-item"><a href="index.html#section-contatos" class="nav-link"> Contatos</a></li>
+              </ul>
+                <div class="login-button">
+                    <button><a href="ChamadoTec.html">Abra um chamado</a></button>
+                </div>
+            </div>
         </header>
     </div>
     <section>
@@ -110,7 +123,7 @@
         id="btnEnviar"
         class="btnEnviar"
 
-        value="Enviar Mensagem">
+        value="Enviar">
 
         <br>
         <br>
@@ -120,7 +133,8 @@
         </div>
         </section>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
         <div class="wrapper">
             <div class="footer-box">
                 <div class="company-footer">
@@ -175,6 +189,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
