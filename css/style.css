@@ -682,6 +682,7 @@ label {
     bottom: 0;
     font-size: 20px;
     line-height: 250px;
+    background-color: #dadada;
     width: 40px;
     color: #0d0c22;
     transition: all 600ms ease-in-out;
@@ -691,7 +692,7 @@ label {
   
   .arrow-left:hover,
   .arrow-right:hover {
-    opacity: 0;
+    opacity: 3;
   }
   
   .arrow-right {
