@@ -131,7 +131,7 @@ header {
 .login-button button:hover{
   color: rgb(100, 100, 100) !important;
     font-weight: bold !important;
-    background-color: #4ba9ce !important;
+    /*background-color: #4ba9ce !important;*/
     display: inline !important;
     padding: 15px 25px !important;
 }
@@ -633,3 +633,99 @@ label {
     filter: brightness(.7);
     transform: scale(.98);
    }
+
+   #input{
+    line-height: 28px!important;
+    border: 2px solid transparent!important;
+    border-bottom-color: #777!important;
+    padding: .2rem 0!important;
+    outline:auto !important;
+    background-color: transparent!important;
+    color: #0d0c22!important;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1)!important;
+   }
+
+   .card {
+    width: 190px;
+    height: 254px;
+    background: rgb(46, 44, 44);
+    transition: all 300ms;
+    border-radius: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: auto;
+   }
+   
+   .card:hover {
+    opacity: 0.8;
+    transform: scale(1.10);
+   }
+
+   .container {
+    position: relative;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #0d0c22;
+    transition: all 600ms ease-in-out;
+    opacity: 0.1;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 0;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+  }
+  
+  .item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+  
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+
+

@@ -20,13 +20,13 @@
                 <div class="nav-list">
                     <ul>
                       <li class="nav-item"><a href="index.html#section-home" class="nav-link"> Início</a></li>
-                      <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Historico de chamados</a></li>
-                      <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Financeiro</a></li>
+                      <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Serviços</a></li>
+                      <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Quem somos</a></li>
                       <li class="nav-item"><a href="index.html#section-contatos" class="nav-link"> Contatos</a></li>
                     </ul>
                 </div>
                 <div class="login-button">
-                    <button><a href="orcamento.html">solicite um orçamento</a></button>
+                    <button class="btn"><a href="orcamento.html">solicite um orçamento</a></button>
                 </div>
     
                 <div class="mobile-menu-icon">
@@ -36,41 +36,35 @@
             <div class="mobile-menu">
               <ul>
                 <li class="nav-item"><a href="index.html#section-home" class="nav-link"> Início</a></li>
-                <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Historico de chamados</a></li>
-                <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Financeiro</a></li>
+                <li class="nav-item"><a href="index.html#section-servicos" class="nav-link"> Serviços</a></li>
+                <li class="nav-item"><a href="index.html#section-quem_somos" class="nav-link"> Quem somos</a></li>
                 <li class="nav-item"><a href="index.html#section-contatos" class="nav-link"> Contatos</a></li>
               </ul>
                 <div class="login-button">
-                    <button><a href="orcamento.html">solicite um orçamento</a></button>
+                    <button class="btn"><a href="orcamento.html">solicite um orçamento</a></button>
                 </div>
             </div>
         </header>
         <section>
         <div>
         <form name="cadastro" method="post" action="orcamentook.html">
-        
-
-        <label for="txtNome">Seu nome</label>
 
         <br>
 
-        <input type="text" name="txtNome" id="txtNome" placeholder="  Digite Nome" title="Digite o Nome" minlength="3" value="" required>
+        <input placeholder="Nome" type="text" class="input" required="">
 
         <br><br>
 
-        <label for="txtEmail">Seu e-mail</label>
 
         <br>
 
-        <input type="email" name="txtEmail" id="txtEmail" placeholder="  Digite seu email" title="Digite seu email" value="" required>
+        <input placeholder="E-mail" type="email" class="input" required="">
 
         <br><br>
 
-        <label for="txtTel">Telefone</label>
-
         <br>
 
-        <input type="tel" name="txtTel" id="txtTel" placeholder="  Digite seu numero" title="Digite seu numero" minlength="11" value="" required>
+        <input placeholder="telefone" type="tel" class="input" required="">
 
         <br><br>
 
@@ -112,16 +106,12 @@
         
         <br>
         
-        <textarea id="txtMensagem" rows="5" placeholder="  Nos diga um pouco sobre o serviço solicitado."></textarea>
+        <textarea placeholder="  Nos diga um pouco sobre seu projeto!" type="textarea" class="input" id="input" required=""></textarea>
 
         <br><br>
 
-        <input type="submit"
-
-        id="btnEnviar"
-        class="btnEnviar"
-
-        value="Enviar">
+        <button class="btn"> Enviar
+        </button>
 
         <br>
         <br>
