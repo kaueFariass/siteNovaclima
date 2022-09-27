@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: #dadada;
+}
 html {
     font-family:'Open Sans', sans-serif;
 }
@@ -66,7 +68,8 @@ header {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 8rem;
+    padding: 2rem 7rem;
+
 }
 
 .logo {
@@ -97,7 +100,7 @@ header {
 .nav-item:hover{
   color: #ffffff;
   background-color: #3b4753;
-  padding: 8px;
+  padding: 9px;
   border-radius: 10px;
   display:  inline;
 }
@@ -106,18 +109,19 @@ header {
     text-decoration: none;
     font-size: 1.15rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .login-button button {
+    margin-top: 18px;
     border: none;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 5px;
     background-color:  rgb(58, 84, 94)!important;
 }
 
 .login-button button a {
-  height: 50;
+  height: 80px;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -200,8 +204,9 @@ header {
     background-image: url('../imagens/banner.png');
     background-size: cover;
     background-position: center;
-    padding-top: 35em;
+    padding-top: 50em;
     height: 50px;
+    box-shadow: 0px 3px 25px #4d4d50;
     
 
 }
@@ -273,8 +278,8 @@ header {
 }
 
 .ar,.manu,.pmoc {
-    height: 170px;
-    width: 170px;
+    height: 280px;
+    width: 280px;
     padding-left: 1px;
     padding-right: 1px;
     display: flex;
@@ -282,13 +287,17 @@ header {
     margin-right: auto;
     position: relative;
     animation: .5s;
+    border-radius: 195px;
+    background: #f7f7f7;
+    box-shadow:  7px 7px 19px #cfcfcf,
+                 -7px -7px 19px #ffffff;
 }
 
 .ar:hover,.manu:hover,.pmoc:hover {
-    height: 180px;
-    width: 180px;
+    height: 285px;
+    width: 285px;
     /*filter: invert(100%);*/
-    animation: .5s;
+    animation: .10s;
     padding-left: 2px;
     padding-right: 2px;
     display: flex;
@@ -541,3 +550,86 @@ label {
 
 }
 
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+   /* btn */
+   .btn {
+    --color: #3b4753;
+    --color2: rgb(255, 255, 255);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
