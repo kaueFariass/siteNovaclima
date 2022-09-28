@@ -331,20 +331,22 @@ form input ::placeholder {
 }
 
 #assunto {
-    background-color: rgb(58, 84, 94);
-    color: aliceblue;
-    border-radius: 7px;
-    border: none;
-    width: 100px;
-    height: 20px;
+    background-color: transparent;
+    color: rgb(97, 97, 97);
+    border-radius: 10px;
+    border-color: #24252a;
+    width: 290px;
+    height: 50px;
+    font-size:larger;
 }
 
 #assunto option {
     width: 100px;
     height: 20px;
-    color: #ffffff;
-    background-color: #3b4753;
-    border-radius: 10px;
+    color: #24252a;
+    border:#24252a;
+    background-color: #dadada;
+    border-radius: 20px;
     display:  inline;
 }
 
@@ -565,7 +567,7 @@ label {
     outline: none;
     padding: .2rem 1rem;
     border-radius: 1rem;
-    border-color: #7a9cc6;
+    border-color: rgb(58, 84, 94);
    }
    
    .input::placeholder {
