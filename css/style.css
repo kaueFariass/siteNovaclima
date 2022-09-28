@@ -204,7 +204,7 @@ header {
     background-image: url('../imagens/banner.png');
     background-size: cover;
     background-position: center;
-    padding-top: 50em;
+    padding-top: 43em;
     height: 50px;
     box-shadow: 0px 3px 25px #4d4d50;
     
@@ -730,6 +730,12 @@ label {
     scrollbar-width: none;
   }
   
+  @media screen and (max-width: 600px) {
+    .footer-bottom,.company-footer {
+      display: none;
+    }
+  }
+
 
 
 

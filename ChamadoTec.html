@@ -50,35 +50,35 @@
     <section>
         <div>
         <form name="cadastro" method="post" action="orcamentook.html">
-        
-
-        <label for="txtNome">Seu nome</label>
-
-        <br>
-
-        <input type="text" name="txtNome" id="txtNome" placeholder="  Digite Nome" title="Digite o Nome" minlength="3" value="" required>
+        <input placeholder="CNPJ da empresa" type="text" class="input" required="">
 
         <br><br>
 
-        <label for="txtEmail">Seu e-mail</label>
 
         <br>
 
-        <input type="email" name="txtEmail" id="txtEmail" placeholder="  Digite seu email" title="Digite seu email" value="" required>
+        <br>
+
+        <input placeholder="Nome do solicitante" type="text" class="input" required="">
 
         <br><br>
 
-        <label for="txtTel">Telefone</label>
 
         <br>
 
-        <input type="tel" name="txtTel" id="txtTel" placeholder="  Digite seu numero" title="Digite seu numero" minlength="11" value="" required>
+        <input placeholder="E-mail do solicitante" type="email" class="input" required="">
+
+        <br><br>
+
+        <br>
+
+        <input placeholder="telefone com ramal" type="tel" class="input" required="">
 
         <br><br>
 
         <label for="assunto">Tipo de serviço:</label>
 
-        <br>
+        <br><br>
 
         <select id="assunto">
 
@@ -94,17 +94,17 @@
 
         <br><br><br>
 
-        <label for="assunto">você é pessoa fisica ou juridica ?</label>
+        <label for="assunto">Qual nivel de urgencia?</label>
 
-        <br>
+        <br><br>
 
         <select id="assunto">
 
-            <option value="help">Selecione</option>
+            <option value="help">Urgente</option>
 
-            <option value="help">Pessoa Fisica</option>
+            <option value="help">Rapido</option>
     
-            <option value="duvi">Pessoa Juridica</option>
+            <option value="duvi">Sem pressa</option>
     
             </select>
     
@@ -114,16 +114,12 @@
         
         <br>
         
-        <textarea id="txtMensagem" rows="5" placeholder="  Nos diga um pouco sobre o serviço solicitado."></textarea>
+        <textarea placeholder="  Nos diga um pouco sobre seu projeto!" type="textarea" class="input" id="input" required=""></textarea>
 
         <br><br>
 
-        <input type="submit"
-
-        id="btnEnviar"
-        class="btnEnviar"
-
-        value="Enviar">
+        <button class="btn"> Enviar
+        </button>
 
         <br>
         <br>
@@ -132,6 +128,11 @@
         </form>
         </div>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>
@@ -140,14 +141,13 @@
                     <div class="company-footer">
                         <img src="imagens/logo.png" id="logofooter">
                         <h2>Nova Clima</h2>
-                        <p>Excelencia no ramo de manutenção de ar condicionado.</p>
                     </div>
                 </div>
                 <div class="footer-box" id="section-contatos">
                     <h2>Contatos</h2>
                     <br>
-                    <br>
-                    <br>
+                    
+                    
                     <ul class="footer-list">
        
                         <li>
